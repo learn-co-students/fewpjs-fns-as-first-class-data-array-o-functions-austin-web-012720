@@ -46,13 +46,14 @@ describe("index.js", () => {
       expect(walkHome).to.exist
       expect(unleashDog).to.exist
     })
-    it("has an array called 'routine' that contains each activity", () => {
+
+
+    xit("has an array called 'routine' that contains each activity", () => {
       expect(routine).to.be.a('array');
       expect(routine).to.include(wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog);
     })
   })
-
-  describe("the function that runs the array o' functions", () => {
+  xdescribe("the function that runs the array o' functions", () => {
     it("calls into the independent functions", () => {
       expect(routine).to.be.a('array');
       expect(routine).to.include(wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog);
