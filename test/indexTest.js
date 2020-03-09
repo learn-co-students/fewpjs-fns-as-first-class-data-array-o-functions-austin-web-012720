@@ -5,6 +5,7 @@ describe("index.js", () => {
       const b = "Border Collie"
       expect(wakeDog(a,b)).to.equal(`Wake ${a} the ${b}`)
     })
+  
     it("has a function leashDog", () => {
       const a = "Boo Radley"
       const b = "Pibble"
