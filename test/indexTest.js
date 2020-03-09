@@ -48,28 +48,28 @@ describe("index.js", () => {
     })
 
 
-    xit("has an array called 'routine' that contains each activity", () => {
-      expect(routine).to.be.a('array');
-      expect(routine).to.include(wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog);
-    })
-  })
-  xdescribe("the function that runs the array o' functions", () => {
-    it("calls into the independent functions", () => {
-      expect(routine).to.be.a('array');
-      expect(routine).to.include(wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog);
-      expect(throwFrisbee).to.exist
+//     xit("has an array called 'routine' that contains each activity", () => {
+//       expect(routine).to.be.a('array');
+//       expect(routine).to.include(wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog);
+//     })
+//   })
+//   xdescribe("the function that runs the array o' functions", () => {
+//     it("calls into the independent functions", () => {
+//       expect(routine).to.be.a('array');
+//       expect(routine).to.include(wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog);
+//       expect(throwFrisbee).to.exist
 
-      const executedMessages = exerciseDog("Esther", "Dalmation")
+//       const executedMessages = exerciseDog("Esther", "Dalmation")
 
-      const successMessages = [ 'Wake Esther the Dalmation',
-        'Leash Esther the Dalmation',
-        'Walk to the park with Esther the Dalmation',
-        'Throw the frisbee for Esther the Dalmation',
-        'Walk home with Esther the Dalmation',
-        'Unleash Esther the Dalmation' ]
+//       const successMessages = [ 'Wake Esther the Dalmation',
+//         'Leash Esther the Dalmation',
+//         'Walk to the park with Esther the Dalmation',
+//         'Throw the frisbee for Esther the Dalmation',
+//         'Walk home with Esther the Dalmation',
+//         'Unleash Esther the Dalmation' ]
 
-      result = successMessages.every(msg => executedMessages.indexOf(msg) >= 0);
-      expect(result, "exerciseDog should run all the functions in the 'routine' array").true
-    })
-  })
-});
+//       result = successMessages.every(msg => executedMessages.indexOf(msg) >= 0);
+//       expect(result, "exerciseDog should run all the functions in the 'routine' array").true
+//     })
+//   })
+// });
