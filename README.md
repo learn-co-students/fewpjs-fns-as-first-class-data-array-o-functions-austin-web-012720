@@ -43,7 +43,7 @@ for `Byron the poodle`. Let's _generalize_ now and make each function take a
 `dogName` and `dogBreed` parameter. Thus:
 
 ```js
-function wakeDog(dogName, dogBreed) {
+function wakeDog(dogName = "Byron", dogBreed = "Poodle") {
   console.log(`Wake ${dogName} the ${dogBreed}`);
 }
 ...
